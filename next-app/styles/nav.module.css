@@ -1,0 +1,17 @@
+.nav {
+  background-color: rgba(22, 20, 20, 0.61);
+  height: 5rem;
+}
+.nav ul {
+  height: inherit;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: flex-end;
+}
+.nav li {
+  padding: 0 2rem;
+  color: lime;
+  font-size: 1.3rem;
+  font-weight: bold;
+}

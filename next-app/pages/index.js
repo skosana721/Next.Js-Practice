@@ -1,11 +1,25 @@
 import Head from "next/head";
-export default function Home() {
+import ImageList from "../components/ImageList";
+export default function Home({ images }) {
   return (
     <div>
       <Head>
         <title>Welcome to Awesomeness</title>
       </Head>
-      <h2>Welcome to Next.js</h2>
+      <ImageList images={images} />
     </div>
   );
 }
+
+export const getStaticProps = async () => {
+  const res = await fetch(
+    `https://jsonplaceholder.typicode.com/photos?_limit=10`
+  );
+  const images = await res.json();
+
+  return {
+    props: {
+      images,
+    },
+  };
+};
