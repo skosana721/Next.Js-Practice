@@ -1,5 +1,5 @@
 import Head from "next/head";
-
+import Form from "../components/Form";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -13,6 +13,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h2>Hello nextjs</h2>
+        <Form />
       </main>
     </div>
   );
