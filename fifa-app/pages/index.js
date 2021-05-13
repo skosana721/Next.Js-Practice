@@ -12,7 +12,6 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h2>Hello nextjs</h2>
         <Form />
       </main>
     </div>
